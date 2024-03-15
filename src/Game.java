@@ -34,6 +34,38 @@ public class Game {
         return "";
     }
 
+    public void vyber(String sloupec, String radek, String player){
+        if (sloupec.equals("1")||radek.equals("1")){
+            pole.set(0,player);
+        }
+        if (sloupec.equals("1")||radek.equals("2")){
+            pole.set(1,player);
+        }
+        if (sloupec.equals("1")||radek.equals("3")){
+            pole.set(2,player);
+        }
+        if (sloupec.equals("2")||radek.equals("1")){
+            pole.set(3,player);
+        }
+        if (sloupec.equals("2")||radek.equals("2")){
+            pole.set(4,player);
+        }
+        if (sloupec.equals("2")||radek.equals("3")){
+            pole.set(5,player);
+        }
+        if (sloupec.equals("3")||radek.equals("1")){
+            pole.set(6,player);
+        }
+        if (sloupec.equals("3")||radek.equals("2")){
+            pole.set(7,player);
+        }
+        if (sloupec.equals("3")||radek.equals("3")){
+            pole.set(8,player);
+        }
 
+    }
 
+    public void setPole(List<String> pole) {
+        this.pole = pole;
+    }
 }
